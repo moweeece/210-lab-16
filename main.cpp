@@ -23,7 +23,7 @@ class Color
     void print() {
         cout << setw(15) << "Red: " << red << endl;
         cout << setw(15) << "Green: " << green << endl;
-        cout << setw(15) << "Blue: " << blue << endl;
+        cout << setw(15) << "Blue: " << blue << endl << endl;
     }
 
 };
@@ -31,8 +31,19 @@ class Color
 
 int main() {
 
+    // First color object
+    Color color1;
+    color1.setRed(255);
+    color1.setGreen(65280);
+    color1.setBlue(16711680);
+    color1.print();
 
-
+    // Second color object
+    Color color2;
+    color2.setRed(125);
+    color2.setGreen(2644);
+    color2.setBlue(25649);
+    color2.print();
 
     return 0;
 }
