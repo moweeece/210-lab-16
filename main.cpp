@@ -13,13 +13,19 @@ class Color
     int blue;
 
     public:
+    // default constructor
+    Color()                       { red = 0; green = 0; blue = 0; }
+    // parameter constructor
+    Color(int r, int g, int b)    { red = r; green = g; blue = b; }
+    // Partial constructor
+
     // getters and setters
-    int getRed()          { return red; }
-    void setRed(int r)    { red = r; }
-    int getGreen()        { return green; }
-    void setGreen(int g)  { green = g; }
-    int getBlue()         { return blue; }
-    void setBlue(int b)   { blue = b; }
+    int getRed()                  { return red; }
+    void setRed(int r)            { red = r; }
+    int getGreen()                { return green; }
+    void setGreen(int g)          { green = g; }
+    int getBlue()                 { return blue; }
+    void setBlue(int b)           { blue = b; }
 
     // print method
     void print() {
@@ -33,12 +39,16 @@ class Color
 
 int main() {
 
-    // First color object
+    // Call using the Default Constructor
     Color color1;
-    color1.setRed(255);
-    color1.setGreen(65280);
-    color1.setBlue(16711680);
     color1.print();
+
+    // First color object
+    Color color2(255, 260, 210);
+    color2.print();
+
+
+
 
     // Second color object
     Color color2;
