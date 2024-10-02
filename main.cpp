@@ -1,4 +1,4 @@
-// COMSC-210 | Lab 14 | Mauricio Espinosa
+// COMSC-210 | Lab 16 | Mauricio Espinosa
 
 #include <iostream>
 #include <iomanip>
