@@ -1,4 +1,5 @@
 // COMSC-210 | Lab 16 | Mauricio Espinosa
+// IDE Used: Visual Studios Code & Github
 
 #include <iostream>
 #include <iomanip>
@@ -18,6 +19,7 @@ class Color
     // parameter constructor
     Color(int r, int g, int b)    { red = r; green = g; blue = b; }
     // Partial constructor
+    Color(int r)                  { red = r; green = 0; blue = 0; }
 
     // getters and setters
     int getRed()                  { return red; }
@@ -43,19 +45,13 @@ int main() {
     Color color1;
     color1.print();
 
-    // First color object
+    // Call using the Parameter Constructor
     Color color2(255, 260, 210);
     color2.print();
 
-
-
-
-    // Second color object
-    Color color2;
-    color2.setRed(125);
-    color2.setGreen(2644);
-    color2.setBlue(25649);
-    color2.print();
+    // Call using the Partial Constructor
+    Color color3(100);
+    color3.print();
 
     return 0;
 }
